@@ -1,0 +1,17 @@
+C:\Projetos em C#\Loja.API\Loja.Infra.Data\bin\Debug\net8.0\Loja.Infra.Data.deps.json
+C:\Projetos em C#\Loja.API\Loja.Infra.Data\bin\Debug\net8.0\Loja.Infra.Data.runtimeconfig.json
+C:\Projetos em C#\Loja.API\Loja.Infra.Data\bin\Debug\net8.0\Loja.Infra.Data.dll
+C:\Projetos em C#\Loja.API\Loja.Infra.Data\bin\Debug\net8.0\Loja.Infra.Data.pdb
+C:\Projetos em C#\Loja.API\Loja.Infra.Data\obj\Debug\net8.0\Loja.Infra.Data.csproj.AssemblyReference.cache
+C:\Projetos em C#\Loja.API\Loja.Infra.Data\obj\Debug\net8.0\Loja.Infra.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos em C#\Loja.API\Loja.Infra.Data\obj\Debug\net8.0\Loja.Infra.Data.AssemblyInfoInputs.cache
+C:\Projetos em C#\Loja.API\Loja.Infra.Data\obj\Debug\net8.0\Loja.Infra.Data.AssemblyInfo.cs
+C:\Projetos em C#\Loja.API\Loja.Infra.Data\obj\Debug\net8.0\Loja.Infra.Data.csproj.CoreCompileInputs.cache
+C:\Projetos em C#\Loja.API\Loja.Infra.Data\obj\Debug\net8.0\Loja.Infra.Data.dll
+C:\Projetos em C#\Loja.API\Loja.Infra.Data\obj\Debug\net8.0\refint\Loja.Infra.Data.dll
+C:\Projetos em C#\Loja.API\Loja.Infra.Data\obj\Debug\net8.0\Loja.Infra.Data.pdb
+C:\Projetos em C#\Loja.API\Loja.Infra.Data\obj\Debug\net8.0\Loja.Infra.Data.genruntimeconfig.cache
+C:\Projetos em C#\Loja.API\Loja.Infra.Data\obj\Debug\net8.0\ref\Loja.Infra.Data.dll
+C:\Projetos em C#\Loja.API\Loja.Infra.Data\bin\Debug\net8.0\Loja.Domain.dll
+C:\Projetos em C#\Loja.API\Loja.Infra.Data\bin\Debug\net8.0\Loja.Domain.pdb
+C:\Projetos em C#\Loja.API\Loja.Infra.Data\obj\Debug\net8.0\Loja.Inf.607441C2.Up2Date

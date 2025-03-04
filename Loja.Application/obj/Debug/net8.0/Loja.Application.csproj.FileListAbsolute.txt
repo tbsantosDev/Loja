@@ -1,0 +1,12 @@
+C:\Projetos em C#\Loja.API\Loja.Application\bin\Debug\net8.0\Loja.Application.deps.json
+C:\Projetos em C#\Loja.API\Loja.Application\bin\Debug\net8.0\Loja.Application.dll
+C:\Projetos em C#\Loja.API\Loja.Application\bin\Debug\net8.0\Loja.Application.pdb
+C:\Projetos em C#\Loja.API\Loja.Application\obj\Debug\net8.0\Loja.Application.csproj.AssemblyReference.cache
+C:\Projetos em C#\Loja.API\Loja.Application\obj\Debug\net8.0\Loja.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos em C#\Loja.API\Loja.Application\obj\Debug\net8.0\Loja.Application.AssemblyInfoInputs.cache
+C:\Projetos em C#\Loja.API\Loja.Application\obj\Debug\net8.0\Loja.Application.AssemblyInfo.cs
+C:\Projetos em C#\Loja.API\Loja.Application\obj\Debug\net8.0\Loja.Application.csproj.CoreCompileInputs.cache
+C:\Projetos em C#\Loja.API\Loja.Application\obj\Debug\net8.0\Loja.Application.dll
+C:\Projetos em C#\Loja.API\Loja.Application\obj\Debug\net8.0\refint\Loja.Application.dll
+C:\Projetos em C#\Loja.API\Loja.Application\obj\Debug\net8.0\Loja.Application.pdb
+C:\Projetos em C#\Loja.API\Loja.Application\obj\Debug\net8.0\ref\Loja.Application.dll

@@ -1,0 +1,38 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Loja.API/Dockerfile
+    container_name: loja_api
+    ports:
+      - "8080:8080"
+      - "8081:8081"
+    depends_on:
+      - db
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Host=db;Port=5432;Database=loja_virtual;Username=postgres;Password=postgres
+      - JWT_SECRET_KEY=a_super_secret_key_with_at_least_32_characters
+    networks:
+      - loja_network
+
+  db:
+    image: postgres:15
+    container_name: loja_db
+    restart: always
+    environment:
+      POSTGRES_DB: loja_virtual
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - loja_network
+
+networks:
+  loja_network:
+
+volumes:
+  postgres_data:

@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35521.163
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loja.API", "Loja.API\Loja.API.csproj", "{43606E3C-7E12-43E1-9490-2048D38B6682}"
+	ProjectSection(ProjectDependencies) = postProject
+		{30EBDAF4-3796-49D5-8FA1-0173D45B91B5} = {30EBDAF4-3796-49D5-8FA1-0173D45B91B5}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loja.Application", "Loja.Application\Loja.Application.csproj", "{95989B7C-55BE-43B7-965B-58F2E92582ED}"
+	ProjectSection(ProjectDependencies) = postProject
+		{81CA748D-1470-4CAA-A162-6CEE1506F640} = {81CA748D-1470-4CAA-A162-6CEE1506F640}
+		{A8286B0B-D132-4680-AF12-AB8F147C07E2} = {A8286B0B-D132-4680-AF12-AB8F147C07E2}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loja.Domain", "Loja.Domain\Loja.Domain.csproj", "{A8286B0B-D132-4680-AF12-AB8F147C07E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loja.Infra.Data", "Loja.Infra.Data\Loja.Infra.Data.csproj", "{81CA748D-1470-4CAA-A162-6CEE1506F640}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A8286B0B-D132-4680-AF12-AB8F147C07E2} = {A8286B0B-D132-4680-AF12-AB8F147C07E2}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loja.Infra.Ioc", "Loja.Infra.Ioc\Loja.Infra.Ioc.csproj", "{30EBDAF4-3796-49D5-8FA1-0173D45B91B5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{81CA748D-1470-4CAA-A162-6CEE1506F640} = {81CA748D-1470-4CAA-A162-6CEE1506F640}
+		{95989B7C-55BE-43B7-965B-58F2E92582ED} = {95989B7C-55BE-43B7-965B-58F2E92582ED}
+		{A8286B0B-D132-4680-AF12-AB8F147C07E2} = {A8286B0B-D132-4680-AF12-AB8F147C07E2}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43606E3C-7E12-43E1-9490-2048D38B6682}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43606E3C-7E12-43E1-9490-2048D38B6682}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43606E3C-7E12-43E1-9490-2048D38B6682}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43606E3C-7E12-43E1-9490-2048D38B6682}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95989B7C-55BE-43B7-965B-58F2E92582ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95989B7C-55BE-43B7-965B-58F2E92582ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95989B7C-55BE-43B7-965B-58F2E92582ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95989B7C-55BE-43B7-965B-58F2E92582ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8286B0B-D132-4680-AF12-AB8F147C07E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8286B0B-D132-4680-AF12-AB8F147C07E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8286B0B-D132-4680-AF12-AB8F147C07E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8286B0B-D132-4680-AF12-AB8F147C07E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81CA748D-1470-4CAA-A162-6CEE1506F640}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81CA748D-1470-4CAA-A162-6CEE1506F640}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81CA748D-1470-4CAA-A162-6CEE1506F640}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81CA748D-1470-4CAA-A162-6CEE1506F640}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30EBDAF4-3796-49D5-8FA1-0173D45B91B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30EBDAF4-3796-49D5-8FA1-0173D45B91B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30EBDAF4-3796-49D5-8FA1-0173D45B91B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30EBDAF4-3796-49D5-8FA1-0173D45B91B5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
