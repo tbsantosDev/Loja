@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace Loja.Domain.Models
@@ -30,7 +31,7 @@ namespace Loja.Domain.Models
         public UserModel User { get; set; }
         [Required(ErrorMessage = "O usuário associado ao pedido é obrigatório.")]
         public int UserId { get; set; }
-
+        [JsonIgnore]
         public ICollection<OrderedItemsModel> Items { get; set; } = [];
 
         public bool CanUserMakePurchase()

@@ -10,3 +10,7 @@ C:\Projetos em C#\Loja.API\Loja.Application\obj\Debug\net8.0\Loja.Application.dl
 C:\Projetos em C#\Loja.API\Loja.Application\obj\Debug\net8.0\refint\Loja.Application.dll
 C:\Projetos em C#\Loja.API\Loja.Application\obj\Debug\net8.0\Loja.Application.pdb
 C:\Projetos em C#\Loja.API\Loja.Application\obj\Debug\net8.0\ref\Loja.Application.dll
+C:\Projetos em C#\Loja.API\Loja.Application\obj\Debug\net8.0\Loja.Application.sourcelink.json
+C:\Projetos em C#\Loja.API\Loja.Application\bin\Debug\net8.0\Loja.Domain.dll
+C:\Projetos em C#\Loja.API\Loja.Application\bin\Debug\net8.0\Loja.Domain.pdb
+C:\Projetos em C#\Loja.API\Loja.Application\obj\Debug\net8.0\Loja.App.6844D516.Up2Date

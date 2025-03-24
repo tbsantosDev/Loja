@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace Loja.Domain.Models
@@ -36,10 +37,13 @@ namespace Loja.Domain.Models
         public CategoryModel Category { get; set; }
         [Required(ErrorMessage = "A categoria do produto é obrigatória.")]
         public int CategoryId { get; set; }
-
+        [JsonIgnore]
         public ICollection<FavoriteModel> FavoritedBy { get; set; } = [];
+        [JsonIgnore]
         public ICollection<OrderedItemsModel> OrderedIn { get; set; } = [];
+        [JsonIgnore]
         public ICollection<ProductImageModel> ProductImages { get; set; } = [];
+        [JsonIgnore]
 
         public ICollection<ReviewModel> Reviews { get; set; } = [];
 

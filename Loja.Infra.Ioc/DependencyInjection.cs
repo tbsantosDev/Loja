@@ -18,10 +18,11 @@ namespace Loja.Infra.Ioc
             var connectionString = Environment.GetEnvironmentVariable("DB_CONNECTION_STRING") ??
                 configuration.GetConnectionString("DefaultConnection");
 
+
             services.AddDbContext<AppDbContext>(options =>
             {
                 options.UseNpgsql(connectionString, b =>
-                    b.MigrationsAssembly("ProjectManager.Infra.Data"));
+                    b.MigrationsAssembly("Loja.Infra.Data"));
             });
 
             var jwtSecretKey = Environment.GetEnvironmentVariable("JWT_SECRET_KEY")
@@ -63,7 +64,7 @@ namespace Loja.Infra.Ioc
                            .AllowAnyMethod();
                 });
 
-                options.AddPolicy("AllowAll", builder =>
+                options.AddPolicy("AllowAll", builder => 
                 {
                     builder.AllowAnyOrigin()
                            .AllowAnyHeader()

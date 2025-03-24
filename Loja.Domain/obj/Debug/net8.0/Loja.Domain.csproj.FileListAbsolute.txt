@@ -9,3 +9,4 @@ C:\Projetos em C#\Loja.API\Loja.Domain\obj\Debug\net8.0\Loja.Domain.dll
 C:\Projetos em C#\Loja.API\Loja.Domain\obj\Debug\net8.0\refint\Loja.Domain.dll
 C:\Projetos em C#\Loja.API\Loja.Domain\obj\Debug\net8.0\Loja.Domain.pdb
 C:\Projetos em C#\Loja.API\Loja.Domain\obj\Debug\net8.0\ref\Loja.Domain.dll
+C:\Projetos em C#\Loja.API\Loja.Domain\obj\Debug\net8.0\Loja.Domain.sourcelink.json

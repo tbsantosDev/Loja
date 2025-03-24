@@ -1,4 +1,4 @@
-﻿using Loja.Domain.Models;
+﻿ using Loja.Domain.Models;
 using Loja.Infra.Data.Configurations;
 using Microsoft.EntityFrameworkCore;
 

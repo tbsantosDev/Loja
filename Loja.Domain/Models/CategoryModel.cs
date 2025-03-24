@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace Loja.Domain.Models
@@ -15,9 +16,11 @@ namespace Loja.Domain.Models
         public string Name { get; set; }
 
         // Relacionamento com produtos
+        [JsonIgnore]
         public ICollection<ProductModel> Products { get; set; } = [];
 
         // Relacionamento com descontos
+        [JsonIgnore]
         public ICollection<DiscountModel> Discounts { get; set; } = [];
     }
 }

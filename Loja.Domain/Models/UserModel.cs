@@ -1,5 +1,6 @@
 ﻿using Loja.Domain.Models.Enums;
 using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace Loja.Domain.Models
 {
@@ -25,9 +26,18 @@ namespace Loja.Domain.Models
         [EnumDataType(typeof(UserEnum), ErrorMessage = "Tipo de usuário inválido.")]
         public UserEnum UserType { get; set; }
         public bool Approved { get; set; } = false;
+        [Required(ErrorMessage = "A data de criação do usuário é obrigatório.")]
+        public DateTime CreatedAt { get; set; }
+        public bool EmailConfirmed { get; set; } = false;
+        public string? EmailConfirmationToken { get; set; }
+        public string? PasswordResetToken { get; set; }
+        public DateTime? PasswordResetTokenExpires { get; set; }
+        [JsonIgnore]
 
         public ICollection<OrderModel> Orders { get; set; } = [];
+        [JsonIgnore]
         public ICollection<FavoriteModel> Favorites { get; set; } = [];
+        [JsonIgnore]
         public ICollection<ReviewModel> Reviews { get; set; } = [];
     }
 }
