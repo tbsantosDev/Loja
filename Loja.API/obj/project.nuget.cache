@@ -1,14 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "p9gBnJGESNg=",
+  "dgSpecHash": "WMLv4x/bDEU=",
   "success": true,
   "projectFilePath": "C:\\Projetos em C#\\Loja.API\\Loja.API\\Loja.API.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\ticob\\.nuget\\packages\\bcrypt.net-next\\4.0.2\\bcrypt.net-next.4.0.2.nupkg.sha512",
+    "C:\\Users\\ticob\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\ticob\\.nuget\\packages\\dotnetenv\\3.1.1\\dotnetenv.3.1.1.nupkg.sha512",
     "C:\\Users\\ticob\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\ticob\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.12\\microsoft.aspnetcore.authentication.jwtbearer.8.0.12.nupkg.sha512",
     "C:\\Users\\ticob\\.nuget\\packages\\microsoft.aspnetcore.authorization\\8.0.12\\microsoft.aspnetcore.authorization.8.0.12.nupkg.sha512",
+    "C:\\Users\\ticob\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.3.0\\microsoft.aspnetcore.http.abstractions.2.3.0.nupkg.sha512",
+    "C:\\Users\\ticob\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.3.0\\microsoft.aspnetcore.http.features.2.3.0.nupkg.sha512",
     "C:\\Users\\ticob\\.nuget\\packages\\microsoft.aspnetcore.metadata\\8.0.12\\microsoft.aspnetcore.metadata.8.0.12.nupkg.sha512",
     "C:\\Users\\ticob\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
     "C:\\Users\\ticob\\.nuget\\packages\\microsoft.build.framework\\17.8.3\\microsoft.build.framework.17.8.3.nupkg.sha512",
@@ -140,7 +142,8 @@
     "C:\\Users\\ticob\\.nuget\\packages\\system.threading.tasks.extensions\\4.3.0\\system.threading.tasks.extensions.4.3.0.nupkg.sha512",
     "C:\\Users\\ticob\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\ticob\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
-    "C:\\Users\\ticob\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
+    "C:\\Users\\ticob\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
+    "C:\\Users\\ticob\\.nuget\\packages\\wiremock.net.abstractions\\1.7.4\\wiremock.net.abstractions.1.7.4.nupkg.sha512"
   ],
   "logs": []
 }

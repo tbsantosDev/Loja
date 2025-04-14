@@ -11,7 +11,8 @@ namespace Loja.Domain.Models.Enums
         pending = 0,
         paid = 1,
         sent = 2,
-        cancelled = 3,
+        delivered = 3,
+        cancelled = 4,
     }
     public enum PaymentMethodOrder
     {

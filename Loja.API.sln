@@ -28,6 +28,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loja.Infra.Ioc", "Loja.Infr
 		{A8286B0B-D132-4680-AF12-AB8F147C07E2} = {A8286B0B-D132-4680-AF12-AB8F147C07E2}
 	EndProjectSection
 EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{D5EE9895-DA51-4468-916E-E6B2A1F8BF45}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -54,6 +56,10 @@ Global
 		{30EBDAF4-3796-49D5-8FA1-0173D45B91B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{30EBDAF4-3796-49D5-8FA1-0173D45B91B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{30EBDAF4-3796-49D5-8FA1-0173D45B91B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5EE9895-DA51-4468-916E-E6B2A1F8BF45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5EE9895-DA51-4468-916E-E6B2A1F8BF45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5EE9895-DA51-4468-916E-E6B2A1F8BF45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5EE9895-DA51-4468-916E-E6B2A1F8BF45}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

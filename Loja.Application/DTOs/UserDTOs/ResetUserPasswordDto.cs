@@ -9,14 +9,12 @@ namespace Loja.Application.DTOs.UserDTOs
 {
     public class ResetUserPasswordDto
     {
-        [Required(ErrorMessage = "A senha Atual é obrigatória.")]
-        [StringLength(100, MinimumLength = 6, ErrorMessage = "A senha deve ter entre 6 e 100 caracteres.")]
-        public string CurrentPassword { get; set; }
-        [Required(ErrorMessage = "Defina uma nova senha.")]
+        [Required(ErrorMessage = "O e-mail é obrigatório.")]
+        public string Email { get; set; }
+        [Required(ErrorMessage = "Token obrigatório.")]
+        public string Token { get; set; }
+        [Required(ErrorMessage = "A nova senha é obrigatória.")]
         [StringLength(100, MinimumLength = 6, ErrorMessage = "A senha deve ter entre 6 e 100 caracteres.")]
         public string NewPassword { get; set; }
-        [Required(ErrorMessage = "Confirme a nova senha escolhida.")]
-        [StringLength(100, MinimumLength = 6, ErrorMessage = "A senha deve ter entre 6 e 100 caracteres.")]
-        public string ConfirmPassword { get; set; }
     }
 }

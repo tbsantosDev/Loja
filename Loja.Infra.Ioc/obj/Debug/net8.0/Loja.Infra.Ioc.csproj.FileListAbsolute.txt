@@ -18,3 +18,5 @@ C:\Projetos em C#\Loja.API\Loja.Infra.Ioc\obj\Debug\net8.0\ref\Loja.Infra.Ioc.dl
 C:\Projetos em C#\Loja.API\Loja.Infra.Ioc\bin\Debug\net8.0\Loja.Domain.dll
 C:\Projetos em C#\Loja.API\Loja.Infra.Ioc\bin\Debug\net8.0\Loja.Domain.pdb
 C:\Projetos em C#\Loja.API\Loja.Infra.Ioc\obj\Debug\net8.0\Loja.Infra.Ioc.sourcelink.json
+C:\Projetos em C#\Loja.API\Loja.Infra.Ioc\bin\Debug\net8.0\Loja.Application.dll
+C:\Projetos em C#\Loja.API\Loja.Infra.Ioc\bin\Debug\net8.0\Loja.Application.pdb

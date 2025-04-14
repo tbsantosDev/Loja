@@ -1,19 +1,22 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Loja.Infra.Ioc
 {
-    public static class DependencyInfectionSwagger
+    public static class DependencyInjectionSwagger
     {
         public static IServiceCollection AddInfrastructionSwagger(this IServiceCollection services)
         {
             services.AddSwaggerGen(c =>
             {
+                c.SwaggerDoc("v1", new OpenApiInfo
+                {
+                    Title = "Loja.API",
+                    Version = "v1",
+                    Description = "API da Loja Virtual",
+                });
+
                 c.AddSecurityDefinition("Bearer", new Microsoft.OpenApi.Models.OpenApiSecurityScheme()
                 {
                     Name = "Authorization",

@@ -7,7 +7,8 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using System;
 using Loja.Infra.Data.Context;
-using Loja.Domain.Models;
+using Loja.Application.Interfaces;
+using Loja.Application.Services;
 
 namespace Loja.Infra.Ioc
 {
@@ -59,7 +60,7 @@ namespace Loja.Infra.Ioc
             {
                 options.AddPolicy("AllowSpecificOrigins", builder =>
                 {
-                    builder.WithOrigins("http://localhost:3000") // Substitua pelo domínio que você quer permitir
+                    builder.WithOrigins("http://localhost:3000, http://localhost:8080") // Substitua pelo domínio que você quer permitir
                            .AllowAnyHeader()
                            .AllowAnyMethod();
                 });
@@ -74,6 +75,9 @@ namespace Loja.Infra.Ioc
 
             services.AddAuthorization();
             services.AddHttpContextAccessor();
+
+            services.AddScoped<IUserInterface, UserService>();
+            services.AddScoped<IOrderInterface, OrderService>();
 
 
             return services;

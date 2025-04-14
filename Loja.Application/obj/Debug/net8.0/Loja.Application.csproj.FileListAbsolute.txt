@@ -14,3 +14,5 @@ C:\Projetos em C#\Loja.API\Loja.Application\obj\Debug\net8.0\Loja.Application.so
 C:\Projetos em C#\Loja.API\Loja.Application\bin\Debug\net8.0\Loja.Domain.dll
 C:\Projetos em C#\Loja.API\Loja.Application\bin\Debug\net8.0\Loja.Domain.pdb
 C:\Projetos em C#\Loja.API\Loja.Application\obj\Debug\net8.0\Loja.App.6844D516.Up2Date
+C:\Projetos em C#\Loja.API\Loja.Application\bin\Debug\net8.0\Loja.Infra.Data.dll
+C:\Projetos em C#\Loja.API\Loja.Application\bin\Debug\net8.0\Loja.Infra.Data.pdb

@@ -2,15 +2,15 @@
   "version": 3,
   "targets": {
     "net8.0": {
-      "BCrypt.Net-Next/4.0.2": {
+      "BCrypt.Net-Next/4.0.3": {
         "type": "package",
         "compile": {
-          "lib/net5.0/BCrypt.Net-Next.dll": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net5.0/BCrypt.Net-Next.dll": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {
             "related": ".xml"
           }
         }
@@ -78,6 +78,39 @@
         },
         "runtime": {
           "lib/net8.0/Microsoft.AspNetCore.Authorization.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Http.Abstractions/2.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Features": "2.3.0",
+          "System.Text.Encodings.Web": "8.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Http.Features/2.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "8.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll": {
             "related": ".xml"
           }
         }
@@ -2380,7 +2413,7 @@
       "System.Text.Encodings.Web/9.0.1": {
         "type": "package",
         "compile": {
-          "lib/net8.0/_._": {
+          "lib/net8.0/System.Text.Encodings.Web.dll": {
             "related": ".xml"
           }
         },
@@ -2559,6 +2592,41 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
+      "WireMock.Net.Abstractions/1.7.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Net.Http": "4.3.4",
+          "System.Security.Cryptography.X509Certificates": "4.3.0",
+          "System.Text.RegularExpressions": "4.3.1"
+        },
+        "compile": {
+          "lib/netstandard2.1/WireMock.Net.Abstractions.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/WireMock.Net.Abstractions.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Loja.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "BCrypt.Net-Next": "4.0.3",
+          "Loja.Domain": "1.0.0",
+          "Loja.Infra.Data": "1.0.0",
+          "Microsoft.AspNetCore.Http.Abstractions": "2.3.0",
+          "WireMock.Net.Abstractions": "1.7.4"
+        },
+        "compile": {
+          "bin/placeholder/Loja.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Loja.Application.dll": {}
+        }
+      },
       "Loja.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -2588,7 +2656,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "BCrypt.Net-Next": "4.0.2",
+          "BCrypt.Net-Next": "4.0.3",
+          "Loja.Application": "1.0.0",
           "Loja.Infra.Data": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.12",
           "Microsoft.AspNetCore.Authorization": "8.0.12",
@@ -2608,23 +2677,20 @@
     }
   },
   "libraries": {
-    "BCrypt.Net-Next/4.0.2": {
-      "sha512": "LyNKpIpr4GraRD9+xlTviyxxbZpF6J4xJf7DvraC1mR8PSN/KonGc4rt8C/fjkD3vaEvgA7BcvsbHFCOjgczyQ==",
+    "BCrypt.Net-Next/4.0.3": {
+      "sha512": "W+U9WvmZQgi5cX6FS5GDtDoPzUCV4LkBLkywq/kRZhuDwcbavOzcDAr3LXJFqHUi952Yj3LEYoWW0jbEUQChsA==",
       "type": "package",
-      "path": "bcrypt.net-next/4.0.2",
+      "path": "bcrypt.net-next/4.0.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "bcrypt.net-next.4.0.2.nupkg.sha512",
+        "bcrypt.net-next.4.0.3.nupkg.sha512",
         "bcrypt.net-next.nuspec",
+        "ico.png",
         "lib/net20/BCrypt.Net-Next.dll",
         "lib/net20/BCrypt.Net-Next.xml",
         "lib/net35/BCrypt.Net-Next.dll",
         "lib/net35/BCrypt.Net-Next.xml",
-        "lib/net40/BCrypt.Net-Next.dll",
-        "lib/net40/BCrypt.Net-Next.xml",
-        "lib/net452/BCrypt.Net-Next.dll",
-        "lib/net452/BCrypt.Net-Next.xml",
         "lib/net462/BCrypt.Net-Next.dll",
         "lib/net462/BCrypt.Net-Next.xml",
         "lib/net472/BCrypt.Net-Next.dll",
@@ -2633,12 +2699,13 @@
         "lib/net48/BCrypt.Net-Next.xml",
         "lib/net5.0/BCrypt.Net-Next.dll",
         "lib/net5.0/BCrypt.Net-Next.xml",
-        "lib/netcoreapp3.1/BCrypt.Net-Next.dll",
-        "lib/netcoreapp3.1/BCrypt.Net-Next.xml",
+        "lib/net6.0/BCrypt.Net-Next.dll",
+        "lib/net6.0/BCrypt.Net-Next.xml",
         "lib/netstandard2.0/BCrypt.Net-Next.dll",
         "lib/netstandard2.0/BCrypt.Net-Next.xml",
         "lib/netstandard2.1/BCrypt.Net-Next.dll",
-        "lib/netstandard2.1/BCrypt.Net-Next.xml"
+        "lib/netstandard2.1/BCrypt.Net-Next.xml",
+        "readme.md"
       ]
     },
     "DotNetEnv/3.1.1": {
@@ -2705,6 +2772,32 @@
         "lib/netstandard2.0/Microsoft.AspNetCore.Authorization.xml",
         "microsoft.aspnetcore.authorization.8.0.12.nupkg.sha512",
         "microsoft.aspnetcore.authorization.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Http.Abstractions/2.3.0": {
+      "sha512": "39r9PPrjA6s0blyFv5qarckjNkaHRA5B+3b53ybuGGNTXEj1/DStQJ4NWjFL6QTRQpL9zt7nDyKxZdJOlcnq+Q==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.http.abstractions/2.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.xml",
+        "microsoft.aspnetcore.http.abstractions.2.3.0.nupkg.sha512",
+        "microsoft.aspnetcore.http.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Http.Features/2.3.0": {
+      "sha512": "f10WUgcsKqrkmnz6gt8HeZ7kyKjYN30PO7cSic1lPtH7paPtnQqXPOveul/SIPI43PhRD4trttg4ywnrEmmJpA==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.http.features/2.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.xml",
+        "microsoft.aspnetcore.http.features.2.3.0.nupkg.sha512",
+        "microsoft.aspnetcore.http.features.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Metadata/8.0.12": {
@@ -8463,6 +8556,42 @@
         "system.xml.xdocument.nuspec"
       ]
     },
+    "WireMock.Net.Abstractions/1.7.4": {
+      "sha512": "IQlaDPp05gGEklPUbL9TUqztJVNimilhmbrrkuGtt3ygwoF3ZOpGIh/UMn2rd+9GYam1YbBqnwNhNVR5XTQNAg==",
+      "type": "package",
+      "path": "wiremock.net.abstractions/1.7.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "PackageReadme.md",
+        "WireMock.Net-Logo.png",
+        "lib/net45/WireMock.Net.Abstractions.dll",
+        "lib/net45/WireMock.Net.Abstractions.pdb",
+        "lib/net45/WireMock.Net.Abstractions.xml",
+        "lib/net451/WireMock.Net.Abstractions.dll",
+        "lib/net451/WireMock.Net.Abstractions.pdb",
+        "lib/net451/WireMock.Net.Abstractions.xml",
+        "lib/net461/WireMock.Net.Abstractions.dll",
+        "lib/net461/WireMock.Net.Abstractions.pdb",
+        "lib/net461/WireMock.Net.Abstractions.xml",
+        "lib/netstandard1.3/WireMock.Net.Abstractions.dll",
+        "lib/netstandard1.3/WireMock.Net.Abstractions.pdb",
+        "lib/netstandard1.3/WireMock.Net.Abstractions.xml",
+        "lib/netstandard2.0/WireMock.Net.Abstractions.dll",
+        "lib/netstandard2.0/WireMock.Net.Abstractions.pdb",
+        "lib/netstandard2.0/WireMock.Net.Abstractions.xml",
+        "lib/netstandard2.1/WireMock.Net.Abstractions.dll",
+        "lib/netstandard2.1/WireMock.Net.Abstractions.pdb",
+        "lib/netstandard2.1/WireMock.Net.Abstractions.xml",
+        "wiremock.net.abstractions.1.7.4.nupkg.sha512",
+        "wiremock.net.abstractions.nuspec"
+      ]
+    },
+    "Loja.Application/1.0.0": {
+      "type": "project",
+      "path": "../Loja.Application/Loja.Application.csproj",
+      "msbuildProject": "../Loja.Application/Loja.Application.csproj"
+    },
     "Loja.Domain/1.0.0": {
       "type": "project",
       "path": "../Loja.Domain/Loja.Domain.csproj",
@@ -8482,6 +8611,7 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "DotNetEnv >= 3.1.1",
+      "Loja.Application >= 1.0.0",
       "Loja.Infra.Ioc >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 9.0.1",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.21.0",
@@ -8525,6 +8655,9 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
+            "C:\\Projetos em C#\\Loja.API\\Loja.Application\\Loja.Application.csproj": {
+              "projectPath": "C:\\Projetos em C#\\Loja.API\\Loja.Application\\Loja.Application.csproj"
+            },
             "C:\\Projetos em C#\\Loja.API\\Loja.Infra.Ioc\\Loja.Infra.Ioc.csproj": {
               "projectPath": "C:\\Projetos em C#\\Loja.API\\Loja.Infra.Ioc\\Loja.Infra.Ioc.csproj"
             }

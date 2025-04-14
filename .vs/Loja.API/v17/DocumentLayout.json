@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Projetos em C#\\Loja.API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{95989B7C-55BE-43B7-965B-58F2E92582ED}|Loja.Application\\Loja.Application.csproj|c:\\projetos em c#\\loja.api\\loja.application\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{95989B7C-55BE-43B7-965B-58F2E92582ED}|Loja.Application\\Loja.Application.csproj|solutionrelative:loja.application\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{95989B7C-55BE-43B7-965B-58F2E92582ED}|Loja.Application\\Loja.Application.csproj|c:\\projetos em c#\\loja.api\\loja.application\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95989B7C-55BE-43B7-965B-58F2E92582ED}|Loja.Application\\Loja.Application.csproj|solutionrelative:loja.application\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95989B7C-55BE-43B7-965B-58F2E92582ED}|Loja.Application\\Loja.Application.csproj|c:\\projetos em c#\\loja.api\\loja.application\\interfaces\\iuserinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{95989B7C-55BE-43B7-965B-58F2E92582ED}|Loja.Application\\Loja.Application.csproj|solutionrelative:loja.application\\interfaces\\iuserinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A8286B0B-D132-4680-AF12-AB8F147C07E2}|Loja.Domain\\Loja.Domain.csproj|c:\\projetos em c#\\loja.api\\loja.domain\\models\\ordermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8286B0B-D132-4680-AF12-AB8F147C07E2}|Loja.Domain\\Loja.Domain.csproj|solutionrelative:loja.domain\\models\\ordermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95989B7C-55BE-43B7-965B-58F2E92582ED}|Loja.Application\\Loja.Application.csproj|c:\\projetos em c#\\loja.api\\loja.application\\dtos\\userdtos\\updateuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{95989B7C-55BE-43B7-965B-58F2E92582ED}|Loja.Application\\Loja.Application.csproj|solutionrelative:loja.application\\dtos\\userdtos\\updateuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{95989B7C-55BE-43B7-965B-58F2E92582ED}|Loja.Application\\Loja.Application.csproj|c:\\projetos em c#\\loja.api\\loja.application\\dtos\\orderdtos\\updateorderstatusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95989B7C-55BE-43B7-965B-58F2E92582ED}|Loja.Application\\Loja.Application.csproj|solutionrelative:loja.application\\dtos\\orderdtos\\updateorderstatusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{43606E3C-7E12-43E1-9490-2048D38B6682}|Loja.API\\Loja.API.csproj|c:\\projetos em c#\\loja.api\\loja.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{43606E3C-7E12-43E1-9490-2048D38B6682}|Loja.API\\Loja.API.csproj|solutionrelative:loja.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{A8286B0B-D132-4680-AF12-AB8F147C07E2}|Loja.Domain\\Loja.Domain.csproj|c:\\projetos em c#\\loja.api\\loja.domain\\models\\enums\\orderenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8286B0B-D132-4680-AF12-AB8F147C07E2}|Loja.Domain\\Loja.Domain.csproj|solutionrelative:loja.domain\\models\\enums\\orderenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95989B7C-55BE-43B7-965B-58F2E92582ED}|Loja.Application\\Loja.Application.csproj|c:\\projetos em c#\\loja.api\\loja.application\\interfaces\\iorderinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95989B7C-55BE-43B7-965B-58F2E92582ED}|Loja.Application\\Loja.Application.csproj|solutionrelative:loja.application\\interfaces\\iorderinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,54 +42,68 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UpdateUserDto.cs",
-              "DocumentMoniker": "C:\\Projetos em C#\\Loja.API\\Loja.Application\\DTOs\\UserDTOs\\UpdateUserDto.cs",
-              "RelativeDocumentMoniker": "Loja.Application\\DTOs\\UserDTOs\\UpdateUserDto.cs",
-              "ToolTip": "C:\\Projetos em C#\\Loja.API\\Loja.Application\\DTOs\\UserDTOs\\UpdateUserDto.cs",
-              "RelativeToolTip": "Loja.Application\\DTOs\\UserDTOs\\UpdateUserDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "OrderEnum.cs",
+              "DocumentMoniker": "C:\\Projetos em C#\\Loja.API\\Loja.Domain\\Models\\Enums\\OrderEnum.cs",
+              "RelativeDocumentMoniker": "Loja.Domain\\Models\\Enums\\OrderEnum.cs",
+              "ToolTip": "C:\\Projetos em C#\\Loja.API\\Loja.Domain\\Models\\Enums\\OrderEnum.cs",
+              "RelativeToolTip": "Loja.Domain\\Models\\Enums\\OrderEnum.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T19:34:33.318Z",
+              "WhenOpened": "2025-04-14T19:49:25.404Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UpdateOrderStatusDto.cs",
+              "DocumentMoniker": "C:\\Projetos em C#\\Loja.API\\Loja.Application\\DTOs\\OrderDTOs\\UpdateOrderStatusDto.cs",
+              "RelativeDocumentMoniker": "Loja.Application\\DTOs\\OrderDTOs\\UpdateOrderStatusDto.cs",
+              "ToolTip": "C:\\Projetos em C#\\Loja.API\\Loja.Application\\DTOs\\OrderDTOs\\UpdateOrderStatusDto.cs",
+              "RelativeToolTip": "Loja.Application\\DTOs\\OrderDTOs\\UpdateOrderStatusDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T19:30:23.587Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "IUserInterface.cs",
-              "DocumentMoniker": "C:\\Projetos em C#\\Loja.API\\Loja.Application\\Interfaces\\IUserInterface.cs",
-              "RelativeDocumentMoniker": "Loja.Application\\Interfaces\\IUserInterface.cs",
-              "ToolTip": "C:\\Projetos em C#\\Loja.API\\Loja.Application\\Interfaces\\IUserInterface.cs",
-              "RelativeToolTip": "Loja.Application\\Interfaces\\IUserInterface.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAwAAABRAAAAAAAAAA==",
+              "Title": "OrderModel.cs",
+              "DocumentMoniker": "C:\\Projetos em C#\\Loja.API\\Loja.Domain\\Models\\OrderModel.cs",
+              "RelativeDocumentMoniker": "Loja.Domain\\Models\\OrderModel.cs",
+              "ToolTip": "C:\\Projetos em C#\\Loja.API\\Loja.Domain\\Models\\OrderModel.cs",
+              "RelativeToolTip": "Loja.Domain\\Models\\OrderModel.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAmwCUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T18:43:49.015Z",
+              "WhenOpened": "2025-04-12T21:43:33.078Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Projetos em C#\\Loja.API\\Loja.Application\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "Loja.Application\\Services\\UserService.cs",
-              "ToolTip": "C:\\Projetos em C#\\Loja.API\\Loja.Application\\Services\\UserService.cs",
-              "RelativeToolTip": "Loja.Application\\Services\\UserService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "C:\\Projetos em C#\\Loja.API\\Loja.Application\\Services\\OrderService.cs",
+              "RelativeDocumentMoniker": "Loja.Application\\Services\\OrderService.cs",
+              "ToolTip": "C:\\Projetos em C#\\Loja.API\\Loja.Application\\Services\\OrderService.cs",
+              "RelativeToolTip": "Loja.Application\\Services\\OrderService.cs",
+              "ViewState": "AgIAAPYAAAAAAAAAAAAAADAAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T18:43:01.544Z",
+              "WhenOpened": "2025-04-12T20:44:10.331Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Projetos em C#\\Loja.API\\Loja.API\\appsettings.json",
-              "RelativeDocumentMoniker": "Loja.API\\appsettings.json",
-              "ToolTip": "C:\\Projetos em C#\\Loja.API\\Loja.API\\appsettings.json",
-              "RelativeToolTip": "Loja.API\\appsettings.json",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAgAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-17T19:50:58.01Z"
+              "DocumentIndex": 4,
+              "Title": "IOrderInterface.cs",
+              "DocumentMoniker": "C:\\Projetos em C#\\Loja.API\\Loja.Application\\Interfaces\\IOrderInterface.cs",
+              "RelativeDocumentMoniker": "Loja.Application\\Interfaces\\IOrderInterface.cs",
+              "ToolTip": "C:\\Projetos em C#\\Loja.API\\Loja.Application\\Interfaces\\IOrderInterface.cs",
+              "RelativeToolTip": "Loja.Application\\Interfaces\\IOrderInterface.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAA/wBcAAABjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T19:44:14.519Z",
+              "EditorCaption": ""
             }
           ]
         }

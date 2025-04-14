@@ -24,10 +24,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Loja.Infra.Ioc\Loja.Infra.Ioc.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Controllers\" />
+    <ProjectReference Include="..\Loja.Application\Loja.Application.csproj" />
   </ItemGroup>
 
 </Project>

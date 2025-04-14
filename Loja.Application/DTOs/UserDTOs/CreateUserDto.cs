@@ -28,7 +28,6 @@ namespace Loja.Application.DTOs.UserDTOs
         [Required(ErrorMessage = "O tipo de usuário é obrigatório.")]
         [EnumDataType(typeof(UserEnum), ErrorMessage = "Tipo de usuário inválido.")]
         public UserEnum UserType { get; set; }
-        public bool Approved { get; set; } = false;
         [Required(ErrorMessage = "A data de criação do usuário é obrigatório.")]
         public DateTime CreatedAt { get; set; }
     }
