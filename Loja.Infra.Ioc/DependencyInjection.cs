@@ -78,6 +78,8 @@ namespace Loja.Infra.Ioc
 
             services.AddScoped<IUserInterface, UserService>();
             services.AddScoped<IOrderInterface, OrderService>();
+            services.AddScoped<ICategoryInterface, CategoryService>();
+            services.AddScoped<IProductInterface, ProductService>();
 
 
             return services;

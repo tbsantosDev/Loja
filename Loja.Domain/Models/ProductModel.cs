@@ -32,6 +32,8 @@ namespace Loja.Domain.Models
 
         [Range(0, int.MaxValue, ErrorMessage = "O peso não pode ser negativo.")]
         public int? Weight { get; set; }
+        [Required(ErrorMessage = "A data da inclusão do produto é obrigatória.")]
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 
         //chave estrangeira para categoria
         public CategoryModel Category { get; set; }

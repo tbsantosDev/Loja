@@ -37,6 +37,10 @@ namespace Loja.Infra.Data.Configurations
             builder.Property(p => p.Weight)
                 .HasColumnType("int");
 
+            builder.Property(p => p.CreatedAt)
+                .IsRequired()
+                .HasDefaultValueSql("NOW()");
+
             builder.HasOne(p => p.Category)
                 .WithMany()
                 .HasForeignKey(p => p.CategoryId)

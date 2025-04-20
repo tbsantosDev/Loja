@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Loja.Infra.Data")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0ff6592f806f4b488360566f77808f1a8941ea52")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aaff9a8b0f9c1c795be9dd5a915d45654068de06")]
 [assembly: System.Reflection.AssemblyProductAttribute("Loja.Infra.Data")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Loja.Infra.Data")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

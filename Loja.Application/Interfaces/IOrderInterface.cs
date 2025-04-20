@@ -23,9 +23,9 @@ namespace Loja.Application.Interfaces
         Task<ResponseModel<List<OrderModel>>> GetMyRecentOrders();
         Task<ResponseModel<OrderModel>> UpdateOrderStatus(UpdateOrderStatusDto updateOrderStatusDto);
         Task<ResponseModel<OrderModel>> AddItemToOrder(AddItemDto addItemDto);
-        Task<ResponseModel<OrderModel>> RemoveItemFromOrder();
-        Task<ResponseModel<OrderModel>> UpdateItemInOrder();
-        Task<ResponseModel<OrderModel>> ConfirmOrderPayment();
+        Task<ResponseModel<OrderModel>> RemoveItemFromOrder(int itemId);
+        Task<ResponseModel<OrderModel>> UpdateItemInOrder(UpdateItemDto updateItemDto);
+        Task<ResponseModel<OrderModel>> ConfirmOrderPayment(int orderId);
         Task<ResponseModel<OrderModel>> CancelOrder(int id);
         Task<ResponseModel<OrderModel>> DeleteOrder(int id);
     }

@@ -59,8 +59,8 @@ namespace Loja.Application.Services
                 };
 
                 _context.OrderedItems.Add(newItem);
-                await _context.SaveChangesAsync();
                 await GetOrderTotal(order.Id);
+                await _context.SaveChangesAsync();
 
                 response.Dados = order;
                 response.Message = "Item adicionado ao pedido com sucesso!";
@@ -82,12 +82,34 @@ namespace Loja.Application.Services
 
             try
             {
+                var userIdClaim = _contextAccessor.HttpContext?.User.FindFirst(ClaimTypes.NameIdentifier);
+                var roleClaim = _contextAccessor.HttpContext?.User.FindFirst(ClaimTypes.Role);
+
+                if (userIdClaim == null || roleClaim == null)
+                {
+                    response.Message = "Usuário não autenticado.";
+                    response.Status = false;
+                    return response;
+                }
+
+                var userId = int.Parse(userIdClaim.Value);
+                var userRole = roleClaim.Value;
+
+
                 var cancelOrder = await _context.Orders.FirstOrDefaultAsync(c => c.Id == id);
                 if (cancelOrder == null)
                 {
                     response.Message = "Pedido não encontrado!";
                     return response;
                 }
+
+                if (cancelOrder.UserId != userId && userRole.ToLower() != "admin")
+                {
+                    response.Message = "Você não tem permissão para cancelar este pedido.";
+                    response.Status = false;
+                    return response;
+                }
+
 
                 if (cancelOrder.Status == OrderStatus.delivered || cancelOrder.Status == OrderStatus.cancelled)
                 {
@@ -112,9 +134,64 @@ namespace Loja.Application.Services
             }
         }
 
-        public Task<ResponseModel<OrderModel>> ConfirmOrderPayment()
+        //Serviço temporiario, substituir quando implementar o gateway de pagamento.
+        public async Task<ResponseModel<OrderModel>> ConfirmOrderPayment(int orderId)
         {
-            throw new NotImplementedException();
+            ResponseModel<OrderModel> response = new();
+
+            try
+            {
+                var userIdClaim = _contextAccessor.HttpContext?.User.FindFirst(ClaimTypes.NameIdentifier);
+                var userRoleClaim = _contextAccessor.HttpContext?.User.FindFirst(ClaimTypes.Role);
+
+                if (userIdClaim == null || userRoleClaim == null)
+                {
+                    response.Message = "Usuário não autenticado.";
+                    response.Status = false;
+                    return response;
+                }
+
+                var userId = int.Parse(userIdClaim.Value);
+                var userRole = userRoleClaim.Value;
+
+                var order = await _context.Orders.FirstOrDefaultAsync(o => o.Id == orderId);
+                if (order == null)
+                {
+                    response.Message = "Pedido não encontrado.";
+                    response.Status = false;
+                    return response;
+                }
+
+                if (order.UserId != userId && userRole.ToLower() != "admin")
+                {
+                    response.Message = "Você não tem permissão para confirmar o pagamento deste pedido.";
+                    response.Status = false;
+                    return response;
+                }
+
+                if (order.Status == OrderStatus.paid)
+                {
+                    response.Message = "Este pedido já está com o pagamento confirmado.";
+                    response.Status = false;
+                    return response;
+                }
+
+                order.Status = OrderStatus.paid;
+
+                _context.Orders.Update(order);
+                await _context.SaveChangesAsync();
+
+                response.Dados = order;
+                response.Message = "Pagamento confirmado com sucesso!";
+                response.Status = true;
+                return response;
+            }
+            catch (Exception ex) 
+            { 
+                response.Message = ex.Message;
+                response.Status = false;
+                return response;
+            }
         }
 
         public async Task<ResponseModel<OrderModel>> CreateOrder(CreateOrderDto createOrderDto)
@@ -433,14 +510,116 @@ namespace Loja.Application.Services
             }
         }
 
-        public Task<ResponseModel<OrderModel>> RemoveItemFromOrder()
+        public async Task<ResponseModel<OrderModel>> RemoveItemFromOrder(int itemId)
         {
-            throw new NotImplementedException();
+            ResponseModel<OrderModel> response = new();
+
+            try
+            {
+                var userIdClaim = _contextAccessor.HttpContext?.User.FindFirst(ClaimTypes.NameIdentifier);
+                var userRoleClaim = _contextAccessor.HttpContext?.User.FindFirst(ClaimTypes.Role);
+
+                if (userIdClaim == null || userRoleClaim == null)
+                {
+                    response.Message = "Usuário não autenticado.";
+                    return response;
+                }
+
+                var userId = int.Parse(userIdClaim.Value);
+                var userRole = userRoleClaim.Value;
+
+                var item = await _context.OrderedItems
+                    .Include(i => i.Order)
+                    .FirstOrDefaultAsync(i => i.Id == itemId);
+
+                if (item == null)
+                {
+                    response.Message = "Item do pedido não encontrado.";
+                    return response;
+                }
+
+                var order = item.Order;
+
+                if (order.UserId != userId && userRole.ToLower() != "admin")
+                {
+                    response.Message = "Você não tem permissão para remover este item.";
+                    return response;
+                }
+
+                _context.OrderedItems.Remove(item);
+                await GetOrderTotal(order.Id);
+                await _context.SaveChangesAsync();
+
+                response.Dados = order;
+                response.Message = "Item removido e pedido atualizado com sucesso.";
+                response.Status = true;
+                return response;
+            }
+            catch (Exception ex)
+            {
+                response.Message = ex.Message;
+                response.Status = false;
+                return response;
+            }
         }
 
-        public Task<ResponseModel<OrderModel>> UpdateItemInOrder()
+        public async Task<ResponseModel<OrderModel>> UpdateItemInOrder(UpdateItemDto updateItemDto)
         {
-            throw new NotImplementedException();
+            ResponseModel<OrderModel> response = new();
+
+            try
+            {
+                var userIdClaim = _contextAccessor.HttpContext?.User.FindFirst(ClaimTypes.NameIdentifier);
+                var userRoleClaim = _contextAccessor.HttpContext?.User.FindFirst(ClaimTypes.Role);
+
+                if (userIdClaim == null || userRoleClaim == null)
+                {
+                    response.Message = "Usuário não autenticado.";
+                    response.Status = false;
+                    return response;
+                }
+
+                var userId = int.Parse(userIdClaim.Value);
+                var userRole = userRoleClaim.Value;
+
+                var item = await _context.OrderedItems
+                    .Include(i => i.Order)
+                    .FirstOrDefaultAsync(i => i.Id == updateItemDto.ItemId);
+
+                if (item == null)
+                {
+                    response.Message = "Item do pedido não encontrado.";
+                    response.Status = false;
+                    return response;
+                }
+
+                var order = item.Order;
+
+                if (order.UserId != userId && userRole.ToLower() != "admin")
+                {
+                    response.Message = "Você não tem permissão para atualizar este item.";
+                    response.Status = false;
+                    return response;
+                }
+
+                item.Amount = updateItemDto.Amount;
+
+                _context.OrderedItems.Update(item);
+                await GetOrderTotal(order.Id);
+                await _context.SaveChangesAsync();
+
+                response.Dados = order;
+                response.Message = "Item atualizado e total do pedido recalculado com sucesso.";
+                response.Status = true;
+                return response;
+
+            }
+            catch (Exception ex) 
+            {
+                response.Message = ex.Message;
+                response.Status = false;
+                return response;
+            }
         }
 
         public async Task<ResponseModel<OrderModel>> UpdateOrderStatus(UpdateOrderStatusDto updateOrderStatusDto)

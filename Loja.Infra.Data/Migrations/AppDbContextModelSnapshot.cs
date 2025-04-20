@@ -315,6 +315,11 @@ namespace Loja.Infra.Data.Migrations
                     b.Property<int>("CategoryId")
                         .HasColumnType("integer");
 
+                    b.Property<DateTime>("CreatedAt")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("timestamp with time zone")
+                        .HasDefaultValueSql("NOW()");
+
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasMaxLength(500)
